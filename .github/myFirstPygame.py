@@ -1,4 +1,4 @@
-# My First PyGame, Naomi Williams, 12/01/21 2:28 pm, v0.5
+# My First PyGame, Naomi Williams, 12/01/21 2:28 pm, v0.6
 
 import pygame, sys
 from pygame.locals import *
@@ -43,3 +43,6 @@ pygame.draw.circle(windowSurface, BLACK, (300, 50), 20, 0)
 
 # Draw an ellipse.
 pygame.draw.ellipse(windowSurface, RED,(300, 250, 40, 80), 1)
+
+# Draw the text rectangle.
+pygame.draw.rect(windowSurface, WHITE, (textRect.left - 20, textRect.width + 40, textRect.height + 40))
