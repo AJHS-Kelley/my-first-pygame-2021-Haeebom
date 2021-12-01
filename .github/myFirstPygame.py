@@ -1,4 +1,4 @@
-# My First PyGame, Naomi Williams, 11/29/21 2:28 pm, v0.3
+# My First PyGame, Naomi Williams, 12/01/21 2:28 pm, v0.4
 
 import pygame, sys
 from pygame.locals import *
