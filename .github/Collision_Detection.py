@@ -1,4 +1,4 @@
-# Pygame Collision Detection Practice, Naomi Williams, Januaray 26, 2022, 3:01am, v0.6
+# Pygame Collision Detection Practice, Naomi Williams, Januaray 27, 2022, 2:13pm, v0.7
 
 from operator import truediv
 import pygame, sys, random
@@ -58,7 +58,13 @@ while True:
                 if event.key == K_DOWN or event.key == K_s:
                    moveUp = False
                    moveDown = True
-                   
+            if event.type == KEYUP:
+                if event.key == K_ESCAPE:
+                    pygame.quit()
+                    sys.exit()
+                # Check to see if the player has stopped moving.
+                if event.key == K_LEFT or event.key == K_a
+
 
 
              
