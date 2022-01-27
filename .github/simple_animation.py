@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # Simple Animation with PyGame, Naomi Williams, 1/25/22, 7:38 PM, v0.9
+=======
+# Simple Animation with PyGame, Naomi Williams, 1/13/22, 2:25PM, v0.7
+>>>>>>> Stashed changes
 
 import pygame, sys, time
 from pygame.locals import *
@@ -56,7 +60,7 @@ while True:
         if b['dir'] == UPRIGHT:
             b['rect'].left += MOVESPEED
             b['rect'].top -= MOVESPEED
-
+            
         if b['rect'].top < 0:
             # The box has moved past the top
             if b['dir'] == UPLEFT:
@@ -77,6 +81,7 @@ while True:
                 b['dir'] = UPRIGHT
         if b['rect'].right > WINDOWWIDTH:
                 # The box has moved past the right.
+<<<<<<< Updated upstream
             if b['dir'] == DOWNRIGHT:
                  b['dir'] = DOWNLEFT
             if b['dir'] == UPRIGHT:
@@ -88,3 +93,15 @@ while True:
     # Draw the Window to the screen.
     pygame.display.update()
     time.sleep(0.02)
+=======
+                if b['dir'] == DOWNRIGHT:
+                    b['dir'] = DOWNLEFT
+                if b['dir'] == UPRIGHT:
+                    b['dir'] = UPLEFT 
+    
+    # Draw the box onto the  game surface.
+    pygame.draw.rect(windowSurface, b['color'], b['rect'])
+
+# Draw the window to the screen.
+time.sleep(0.02)
+>>>>>>> Stashed changes
